@@ -43,6 +43,7 @@ function countWords() {
         document.getElementById("left").innerHTML = "No. of Words Remaining : "+em ;
         
         if ( em < 0 ) {
+            document.getElementById("left").innerHTML = "No. of Words Exceeded : "+(em*-1) ;
             document.getElementById("left").style.color = "red" ;
             document.getElementById("written").style.color = "#333" ;
         }
