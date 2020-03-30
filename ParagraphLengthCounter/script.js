@@ -11,7 +11,7 @@ function registerlimit() {
         if ( limit != 0 ) {
             limit_exists = true ;
             console.log(limit/5) ;
-            document.getElementById("target").style.backgroundSize = "100% 4px, auto" ;
+            document.getElementById("target").style.backgroundSize = "100% 2px, auto" ;
             document.getElementById("left").style.color = "#333" ;
         }
     } else {
@@ -30,8 +30,10 @@ function countWords() {
         document.getElementById("left").innerHTML = "No. of Words Remaining : "+limit ;
     }
 
-    if ( document.getElementById("content").value == "" )
+    if ( document.getElementById("content").value == "" ) {
+        document.getElementById("written").innerHTML = "No. of Words Written : 0" ;
         return ;
+    }
     
     text = document.getElementById("content").value.split(" ") ;
     document.getElementById("written").innerHTML = "No. of Words Written : "+text.length ;

@@ -16,10 +16,20 @@ body {
     color: #fff ;
     text-align: center;
     right: 0;
-
 }
 
-textarea {
+a {
+    text-decoration: none ;
+    color: rgb(95, 165, 236);
+    transition: color 0.1s linear ;
+}
+a:hover {
+    color: rgb(192, 233, 10);
+}
+
+
+/* Animat1 */
+/* textarea {
     background: #F2F2F2 ;
     border: none;
     overflow: auto;
@@ -41,8 +51,36 @@ textarea {
 }
 
 textarea:focus {
-    background-size: 100% 4px, auto;
+    background-size: 100% 4px 4px, auto;
+} */
+
+/* Animation 2 */
+
+textarea {
+    padding: 10px 10px ;
+    background: #F2F2F2 ;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; 
+    width: 60% ;
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px ;
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px ;
+    font-size: 18px ;
+    resize: none ;
+    border: solid 0px dodgerblue;
+    transition: border-width 0.1s ease-out;
 }
+
+textarea:focus { 
+    border-width: 2px; 
+}
+
 
 #target {
     background: none ;
@@ -67,16 +105,11 @@ textarea:focus {
     background-repeat: no-repeat;
     background-position: center bottom;
     transition: all .2s ease-out;
-    
 }
-
-
 #target:focus {
     background-size: 100% 2px, auto;
 }
-#target:hover {
-    background-size: 100% 2px, auto;
-}
+
 
 #left {
     color: #F4F4F4;
