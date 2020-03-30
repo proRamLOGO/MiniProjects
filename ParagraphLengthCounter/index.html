@@ -10,14 +10,40 @@
         <meta name="description" content="Count number of words in your paragraph" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" src="" />
+        <!-- <link rel="icon" href="" /> -->
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
 
+        <section id="nav">
+            <h1> Word Length Counter by Shubh Bansal </h1>
+        </section>
 
+        <section class="section1" >
 
+            <h3>Enter the content in the box below and we will keep track of the wordage!!</h3>
+
+            <input type="text" id="target" placeholder="Any Target ?" pattern="[0-9]*" onkeyup="registerlimit()" />
+
+            <br /><br /><br />
+
+            <textarea rows="15" id="content" type="text" autofocus placeholder="Begin Typing..." onkeyup="countWords()" ></textarea>
+
+        </section>
+    
+        <section class="section2" >
+            <div class="analytic">
+                <h4 id="written" >No. of Words Written : 0</h4>
+                <h4 id="left">No. of Words Remaining : </h4>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 
 </html>
