@@ -26,6 +26,8 @@ function registerlimit() {
 
 function countWords() {
 
+    document.getElementById("written").style.color = "#333" ;
+
     if ( limit_exists ) {
         document.getElementById("left").innerHTML = "No. of Words Remaining : "+limit ;
     }

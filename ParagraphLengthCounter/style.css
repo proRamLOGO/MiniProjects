@@ -110,7 +110,29 @@ textarea:focus {
     background-size: 100% 2px, auto;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #target {
+      width: 25%;
+    }
+
+    #nav {
+        height: 50px ;
+        font-size: 10px ;
+    }
+
+    textarea {
+        margin-top: 100px ;
+    }
+
+    .analytic {
+        margin-top: -480px ;
+    }
+
+}
+  
 
 #left {
     color: #F4F4F4;
 }
+
