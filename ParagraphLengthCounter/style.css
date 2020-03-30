@@ -1,0 +1,83 @@
+body {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Avenir Next','Roboto', sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+    text-align: center;
+}
+
+#nav {
+    background-color: #2f2f2f;
+    position: fixed ;
+    width: 100% ;
+    bottom: 0 ;
+    left: 0 ;
+    color: #fff ;
+    text-align: center;
+    right: 0;
+
+}
+
+textarea {
+    background: #F2F2F2 ;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; 
+    width: 60% ;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+    font-size: 18px ;
+    resize: none ;
+    background-image: linear-gradient(dodgerblue, dodgerblue), linear-gradient(#F4F4F4, #F4F4F4);
+    background-size: 0 4px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+textarea:focus {
+    background-size: 100% 4px, auto;
+}
+
+#target {
+    background: none ;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; 
+    width: 10% ;
+    font-size: 18px ;
+    resize: none ;
+    text-align: center ;
+    font-weight: normal ;
+    border-bottom: 0px solid #d3d3d3  ;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+    
+    background-image: linear-gradient(dodgerblue, dodgerblue), linear-gradient(#F4F4F4, #F4F4F4);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+    
+}
+
+
+#target:focus {
+    background-size: 100% 2px, auto;
+}
+#target:hover {
+    background-size: 100% 2px, auto;
+}
+
+#left {
+    color: #F4F4F4;
+}
