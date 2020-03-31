@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <!-- MetaData -->
+        <meta charset="UTF-8" />
+        <meta name="author" content="proRam" />
+        <meta name="description" content="Play Tambola with the help of this online Tambola Board" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tambola</title> 
+        <link rel="icon" href="meicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <section id="nav">
+            <h1> Tambola by <a href="http://shubhbansal.tech/">Shubh Bansal</a> </h1>
+        </section>
+
+        <section class="section1" >
+
+            <h3>Enter the content in the box below and we will keep track of the wordage!!</h3>
+
+            <input type="text" id="target" placeholder="Target" pattern="[0-9]*" onkeyup="registerlimit()" />
+
+            <br /><br /><br />
+
+            <textarea rows="15" id="content" type="text" autofocus placeholder="Begin Typing..." onkeyup="countWords()" ></textarea>
+
+            <div class="analytic">
+                <h4 id="written" >No. of Words Written : 0</h4>
+                <h4 id="left">No. of Words Remaining : </h4>
+            </div>
+
+        </section>
+    
+        
+
+        
+
+        <br><br><br><br>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
