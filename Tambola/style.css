@@ -6,6 +6,13 @@ html, body {
     background-color: #F4F4F4;
     color: #333;
     text-align: center;
+
+    /* .disable-selection  */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 #nav {
@@ -28,3 +35,119 @@ a:hover {
     color: rgb(192, 233, 10);
 }
 
+svg {
+    max-height: 300px;
+}
+
+circle {
+    max-width: 100px;
+    stroke: #F4F4F4 ;
+    stroke-width: 5px ;
+    fill: none ;
+    z-index: 5;
+    stroke-dasharray:  471 ;/*r=75*/
+    stroke-dashoffset: 470 ;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+}
+
+.crcl {
+    animation: 1.5s ease-in-out svg--animation;
+}
+
+@keyframes svg--animation {
+    0% {
+        stroke: #333 ;
+        transform: rotateZ(0deg);
+        stroke-dashoffset: 471;
+    }
+    75% {
+        transform: rotateZ(540deg);
+        stroke-dashoffset: 118;
+    }
+    100% {
+        stroke: #333 ;
+        transform: rotateZ(1080deg);
+        stroke-dashoffset: 470;
+    }
+}
+
+.crcl1 {
+    animation: 2s ease-in-out svg--animation1;
+}
+
+@keyframes svg--animation1 {
+    0% {
+        /* stroke: rgb(95, 165, 236) ; */
+        transform: rotateZ(0deg);
+        stroke-dashoffset: 118;
+    }
+    50% {
+        stroke: rgb(95, 165, 236) ;
+        transform: rotateZ(540deg);
+        stroke-dashoffset: 471;
+        
+    }
+    100% {
+        transform: rotateZ(1080deg);
+        stroke-dashoffset: 118;
+    }
+  }
+  
+  #bignum {
+      visibility: hidden;
+  }
+  .bnanim {
+      animation: 1.5s ease-in-out bignumanimation ;
+  }
+
+  @keyframes bignumanimation {
+      0% {
+          opacity: 0%;
+      }
+      90% {
+          opacity: 1%;
+      }
+      100% {
+          opacity: 100%;
+      }
+  }
+  
+table {
+    color: #333 ;
+    width: 70% ;
+    border-radius : 5px ;
+    border: 4px solid #F4F4F4 ; 
+    border-collapse: collapse;
+    align-items: center ;
+}
+tr {
+    max-width: 70 ;
+    vertical-align: center;
+}
+
+td {
+    border: 1px solid #333 ;
+    height: 30px ;
+    margin: 0 ;
+    width: 7% ;
+    text-align: center ;
+    visibility: hidden ;
+    color: #333 ;
+}
+
+.smallnum {
+    animation: 2s linear fadein ; 
+}
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        color: #333 ;
+    }
+}
