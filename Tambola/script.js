@@ -11,7 +11,7 @@ function sleep(milliseconds) {
 // var ran = false ;
 
 var used = [] ;
-for ( var i = 0 ; i < 99 ; ++i )
+for ( var i = 0 ; i < 100 ; ++i )
   used.push(false) ;
 
 var now = 0 ;
@@ -24,12 +24,15 @@ function newnum() {
     document.getElementById("welcometext").style.visibility = "hidden" ;
     document.getElementById("bignum").classList.toggle("bnanim") ;
     
-    if (now==2 && cnt < 100) {
+    if ( cnt==100 ) 
+        return ;
+
+    if (now==2) {
         now = 0 ;
 
         // Main action
         var num = Math.floor(Math.random()*100) ;
-        while ( num==0 || used[num] ) {
+        while ( num==0 || used[num]==true ) {
             num = Math.floor(Math.random()*100) ;
         }
         console.log(num) ;
@@ -41,9 +44,12 @@ function newnum() {
         document.getElementById("checkgrid").rows[r].cells.item(c).classList.add("smallnum") ;
         document.getElementById("checkgrid").rows[r].cells.item(c).style.visibility = "visible" ;
         document.getElementById("checkgrid").rows[r].cells.item(c).innerHTML = num ;
+        used[num] = true;
 
-        if (Math.floor(num/10) == 0) {
-            num = '0'+num ;
+        num = num.toString() ;
+
+        if ( num.length == 1) {
+            num = "0"+num ;
         }
         document.getElementById("bignum").style.visibility = "visible" ;
         document.getElementById("bignum").textContent = num ;
