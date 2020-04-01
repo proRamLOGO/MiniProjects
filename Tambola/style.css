@@ -145,12 +145,10 @@ td {
     }
     75% {
         opacity: 0%;
-        border: 0px solid #333 ;
     }
     100% {
         opacity: 100%;
         color: #333 ;
-        border: 1px solid #333 ;
     }
 }
 

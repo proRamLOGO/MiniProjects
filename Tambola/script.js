@@ -33,7 +33,6 @@ function newnum() {
         var r = Math.floor(num/10); var c = num%10 ;
         document.getElementById("checkgrid").rows[r].cells.item(c).classList.add("smallnum") ;
         document.getElementById("checkgrid").rows[r].cells.item(c).style.visibility = "visible" ;
-        document.getElementById("checkgrid").rows[r].cells.item(c).style.border = "1px solid #333" ;
         document.getElementById("checkgrid").rows[r].cells.item(c).innerHTML = num ;
         used[num] = true;
 
