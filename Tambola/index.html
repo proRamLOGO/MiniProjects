@@ -23,16 +23,62 @@
             <h1> Tambola by <a href="http://shubhbansal.tech/">Shubh Bansal</a> </h1>
         </section>
 
-        <section class="section1" >
+        <section class="section1" onclick="newnum()"  >
 
-            <h3>!! Happy Tambola !!</h3>
-
-            <svg height="208px" > 
-                <circle cx="50%" cy="50%" r="100px" stroke="black" stroke-width="4" fill="none" />
+            <h3 id="slang" >!! Happy Tambola !!</h3>
+            <!-- <hr> -->
+            
+            <!-- Circle Here -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle class="crcl crcl1" id="cir" cx="50%" cy="50%" r="75"  onclick="newnum()"/>
+                <text id="welcometext" font-size="24" >
+                    <tspan x="30%" y="38%" font-size="14">Double Click</tspan>
+                    <tspan x="44%" y="54%">for</tspan>
+                    <tspan x="30%" y="70%">Number</tspan>
+                </text>
+                <text x="30%" y="63%" id="bignum" class="bnanim" font-size="72" weight="bold" >
+                    88
+                </text>
             </svg>
-            <h4>Hey</h4>
+
         </section>
-    
+        
+        <section class="grid" >
+            <center>
+            <table id="checkgrid" >
+                <tr>
+                    <td>1</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td>25</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+            </center>
+        </section>
         
 
         
