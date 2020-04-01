@@ -122,15 +122,14 @@ table {
     align-items: center ;
 }
 tr {
-    max-width: 70 ;
+    max-width: 70% ;
     vertical-align: center;
 }
 
 td {
-    border: 1px solid #333 ;
     height: 30px ;
     margin: 0 ;
-    width: 7% ;
+    width: 10% ;
     text-align: center ;
     visibility: hidden ;
     color: #333 ;
@@ -142,12 +141,63 @@ td {
 @keyframes fadein {
     0% {
         opacity: 0%;
+        border: 0px solid #333 ;
     }
     75% {
         opacity: 0%;
+        border: 0px solid #333 ;
     }
     100% {
         opacity: 100%;
         color: #333 ;
+        border: 1px solid #333 ;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    svg {
+      height: 150px;
+      width: 100% ;
+    }
+
+    #nav {
+        height: 50px ;
+        font-size: 10px ;
+    }
+
+    .grid {
+        margin-top: 50px ;
+        font-size: 18px ;
+
+    }
+
+    table {
+        width: 90% ;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    /* Glaxy S5 */
+    svg {
+      height: 150px;
+      width: 100% ;
+    }
+
+    #nav {
+        height: 50px ;
+        font-size: 10px ;
+    }
+
+    .grid {
+        margin-top: 10px ;
+        font-size: 18px ;
+
+    }
+
+    table {
+        width: 90% ;
+    }
+
 }
