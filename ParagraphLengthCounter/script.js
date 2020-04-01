@@ -37,7 +37,7 @@ function countWords() {
         return ;
     }
     
-    text = document.getElementById("content").value.split(" ") ;
+    text = document.getElementById("content").value.split(/\s/) ;
     document.getElementById("written").innerHTML = "No. of Words Written : "+text.length ;
     
     if ( limit_exists ) {
