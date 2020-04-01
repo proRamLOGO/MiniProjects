@@ -1,14 +1,4 @@
-// document.getElementById("myTable").rows[0].cells[0]
-
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
-// var ran = false ;
+var slans = {}
 
 var used = [] ;
 for ( var i = 0 ; i < 100 ; ++i )
@@ -43,6 +33,7 @@ function newnum() {
         var r = Math.floor(num/10); var c = num%10 ;
         document.getElementById("checkgrid").rows[r].cells.item(c).classList.add("smallnum") ;
         document.getElementById("checkgrid").rows[r].cells.item(c).style.visibility = "visible" ;
+        document.getElementById("checkgrid").rows[r].cells.item(c).style.border = "1px solid #333" ;
         document.getElementById("checkgrid").rows[r].cells.item(c).innerHTML = num ;
         used[num] = true;
 
