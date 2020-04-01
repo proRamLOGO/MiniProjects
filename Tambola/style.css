@@ -141,7 +141,6 @@ td {
 @keyframes fadein {
     0% {
         opacity: 0%;
-        border: 0px solid #333 ;
     }
     75% {
         opacity: 0%;
