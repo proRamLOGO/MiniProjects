@@ -14,9 +14,6 @@ function newnum() {
     document.getElementById("welcometext").style.visibility = "hidden" ;
     document.getElementById("bignum").classList.toggle("bnanim") ;
     
-    if ( cnt==100 ) 
-        return ;
-
     if (now==2) {
         now = 0 ;
 
@@ -44,8 +41,17 @@ function newnum() {
         document.getElementById("bignum").style.visibility = "visible" ;
         document.getElementById("bignum").textContent = num ;
 
-
     }
     
+    if ( cnt==99 ) { // All numbers done
+        endit() ;
+        return ;
+    }
 
+}
+
+function endit() {
+
+    document.getElementById('footer').style.visibility = "visible" ;
+    document.getElementById('footer').style.animation = "fadein 3s ease-in-out" ;
 }

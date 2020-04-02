@@ -8,13 +8,12 @@
         <meta charset="UTF-8" />
         <meta name="author" content="proRam" />
         <meta name="description" content="Play Tambola with the help of this online Tambola Board" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no " />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>Tambola</title> 
         <link rel="icon" href="meicon.png" />
 
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +22,7 @@
             <h1> Tambola by <a href="http://shubhbansal.tech/">Shubh Bansal</a> </h1>
         </section>
 
-        <section class="section1" onclick="newnum()"  >
+        <section class="section1" onclick="newnum()" >
 
             <h3 id="slang" >!! Happy Tambola !!</h3>
             <!-- <hr> -->
@@ -43,8 +42,9 @@
 
         </section>
         
+        <center>
         <section class="grid" >
-            <center>
+            
             <table id="checkgrid" >
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -77,14 +77,21 @@
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                 </tr>
             </table>
-            </center>
+            
         </section>
         
-
-        
+       
+         
+        <section id="footer" >
+            <h1>thank you <strong>!</strong></h1>
+            <h3>Game's Over</h3>
+            <h3>all numerals knocked off 👊</h3>
+            <h4 onclick="location.reload()" >Play Again !</h2></a>
+        </section>
+        </center>
 
         <br><br><br><br>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js" ></script>
     </body>
 
 </html>

@@ -1,8 +1,8 @@
 html, body {
     overflow-x:hidden ;
     font-size: 17px;
-    font-weight: 400;
-    font-family: 'Avenir Next','Roboto', sans-serif;
+    /* font-weight: 400; */
+    font-family: 'Avenir Next', sans-serif;
     background-color: #F4F4F4;
     color: #333;
     text-align: center;
@@ -24,6 +24,7 @@ html, body {
     color: #fff ;
     text-align: center;
     right: 0;
+    z-index: 1;
 }
 
 a {
@@ -159,6 +160,36 @@ td {
     }
 }
 
+#footer {
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    background-color: #f4f4f4 ;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    visibility: hidden;
+    vertical-align: middle;
+}
+
+#footer h1 {
+    font-size: 125px ;
+    font-weight: 10 ;
+}
+
+#footer h4 {
+    width: 30% ;
+    background-color: rgb(36, 127, 218) ;
+    color: #f4f4f4 ;
+    height: 40px ;
+    border-radius: 2px ;
+    padding-top: 20px ;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     svg {
@@ -181,9 +212,17 @@ td {
         width: 90% ;
     }
 
+    #footer h1 {
+        font-size: 100px ;
+    }
+
+    #footer h4 {
+        width: 50%;
+    }
+
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 361px) {
     /* Glaxy S5 */
     svg {
       height: 150px;
@@ -206,3 +245,69 @@ td {
     }
 
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    
+    /* Ipad + pro portrait */
+
+    #footer {
+        padding-top: 100px ;
+    }
+
+    #footer h3 {
+        font-size: 36px ;
+    }
+
+    #footer h4 {
+        margin-top: 150px ;
+        font-size: 36px ;
+        height: 70px ;
+    }
+
+    #nav {
+        height: 100px;
+        font-size: 24px ;
+    }
+
+    .grid, svg {
+        margin-top: 100px ;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* ipad LS */
+    .section1 {
+        transform: scale(0.75) ;
+    }
+
+    .grid {
+        margin-top: -40px ;
+        transform: scale(1.1) ;
+    }
+  
+    #slang {
+        margin-top: -30px ;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+    svg {
+        margin-top: 100px ;
+    }
+
+    .grid {
+        margin-top: 180px ;
+        transform: scale(1.2) ;
+    }
+
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url("fonts/Avenir.ttc"); /* File to be stored at your site */
+    
+}
+
