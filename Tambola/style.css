@@ -60,15 +60,23 @@ circle {
         stroke: #333 ;
         transform: rotateZ(0deg);
         stroke-dashoffset: 471;
+        opacity: 80%;
+    }
+    50% {
+        opacity: 100%;
     }
     75% {
         transform: rotateZ(540deg);
         stroke-dashoffset: 118;
     }
+    85% {
+        opacity: 75%;
+    }
     100% {
         stroke: #333 ;
         transform: rotateZ(1080deg);
         stroke-dashoffset: 470;
+        opacity: 0%;
     }
 }
 
